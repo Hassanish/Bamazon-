@@ -96,11 +96,8 @@ function message(){
      } 
     else {
      console.log("\nInsufficiant quantity of " + product + "\r\n");
-      YourItems(results+'\n');
-      console.log( "\r\n")  
-      CreateTable(results);
-
-
+         ord();
+      console.log( "\r\n")
     }
     })
     }    
