@@ -105,19 +105,6 @@ function message(){
     }) 
     }
 
-function CreateTable(results) {
-    var table = new Table ({
-        head: ["Item ID", "Product", "Department", "Price", "Stock Quantity"],
-        colWidths: [15, 25, 26, 10, 16]
-    });
-
-    for (var i = 0; i < results.length; i++) {
-        var myArray = [results[i].item_id, results[i].product_name,  results[i].department_name, results[i].price, results[i].stock_quantity]; 
-        table.push(myArray);
-    };        
-
-    console.log(table.toString());
-};
 
 function ord() {
     inquirer.prompt({
